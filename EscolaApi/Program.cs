@@ -1,4 +1,5 @@
 using AlunoApi.Services;
+using DisciplinaApi.Services;
 using EscolaApi.Data;
 using EscolaApi.Services;
 using EscolaApi.Services.Interfaces;
@@ -25,6 +26,7 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IEnderecoService, EnderecoService>();
 builder.Services.AddScoped<IEscolaService, EscolaService>();
 builder.Services.AddScoped<IAlunoService, AlunoService>();
+builder.Services.AddScoped<IDisciplinaService, DisciplinaService>();
 
 var app = builder.Build();
 
