@@ -1,4 +1,6 @@
-﻿namespace EscolaApi.Data.Dtos.Aluno;
+﻿using EscolaApi.Data.Dtos.Escola;
+
+namespace EscolaApi.Data.Dtos.Aluno;
 
 public class ReadAlunoDto
 {
@@ -7,4 +9,6 @@ public class ReadAlunoDto
     public string Name { get; set; }
 
     public int EscolaId { get; set; }
+
+    public ReadEscolaDto EscolaDto { get; set; }
 }

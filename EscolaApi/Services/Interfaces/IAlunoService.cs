@@ -5,9 +5,11 @@ namespace EscolaApi.Services.Interfaces;
 
 public interface IAlunoService
 {
-    public Task<IActionResult> create([FromBody] CreateAlunoDto dto);
+    public Task create([FromBody] CreateAlunoDto dto);
 
     public Task<IEnumerable<ReadAlunoDto>> getAll();
 
-    public Task<IActionResult> getById(int id);
+    public Task<ReadAlunoDto> getById(int id);
+
+    public Task update(int id, [FromBody] UpdateAlunoDto dto);
 }

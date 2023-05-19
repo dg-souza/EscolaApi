@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "tmhrlh+6uuubyZXcseEiDugXBqhAsaLjlObG8mTdFKy+N/PmxBsP8KauRwqaEMu5mwa54pGhPQCo9t1mgBbuHA==",
+  "dgSpecHash": "URGoUPyeQRT+9bn+/NhUyGycF8tHSl3Cbj3RGc28GSA2u1rGIvLzIXbJ9B6ihMUvP+KDly3USxNUnFHyfwTSXw==",
   "success": true,
   "projectFilePath": "C:\\Users\\VT418652\\source\\repos\\EscolaApi\\EscolaApi\\EscolaApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\VT418652\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\VT418652\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\VT418652\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\VT418652\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\VT418652\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\VT418652\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
     "C:\\Users\\VT418652\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.10\\microsoft.entityframeworkcore.abstractions.6.0.10.nupkg.sha512",
     "C:\\Users\\VT418652\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.10\\microsoft.entityframeworkcore.analyzers.6.0.10.nupkg.sha512",

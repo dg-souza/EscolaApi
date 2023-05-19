@@ -1,22 +1,22 @@
-﻿using EscolaApi.Data.Dtos.Aluno;
+﻿using EscolaApi.Data.Dtos.Escola;
 using EscolaApi.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AlunoApi.Controllers;
+namespace EscolaApi.Controllers;
 
 [ApiController]
 [Microsoft.AspNetCore.Mvc.Route("[controller]")]
-public class AlunoController : ControllerBase
+public class EscolaController : ControllerBase
 {
-    private readonly IAlunoService _service;
+    private readonly IEscolaService _service;
 
-    public AlunoController(IAlunoService service)
+    public EscolaController(IEscolaService service)
     {
         _service = service;
     }
 
     [HttpPost]
-    public async Task<IActionResult> create([FromBody] CreateAlunoDto dto)
+    public async Task<IActionResult> create([FromBody] CreateEscolaDto dto)
     {
         await _service.create(dto);
 
@@ -24,7 +24,7 @@ public class AlunoController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IEnumerable<ReadAlunoDto>> getAll()
+    public async Task<IEnumerable<ReadEscolaDto>> getAll()
     {
         var res = await _service.getAll();
 
@@ -32,7 +32,7 @@ public class AlunoController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<ReadAlunoDto> getById(int id)
+    public async Task<ReadEscolaDto> getById(int id)
     {
         var res = await _service.getById(id);
 
@@ -40,7 +40,7 @@ public class AlunoController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> update(int id, [FromBody] UpdateAlunoDto dto)
+    public async Task<IActionResult> update(int id, [FromBody] UpdateEscolaDto dto)
     {
         await _service.update(id, dto);
 
